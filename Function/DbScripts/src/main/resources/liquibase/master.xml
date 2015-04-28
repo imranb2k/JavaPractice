@@ -1,0 +1,19 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet author="DBA" id="Point 0. No schema exists.">
+        <tagDatabase tag="version_0.0"/>
+    </changeSet>
+
+    <!-- NOTE: Please do not provide script for destroying the DB completely -->
+    <changeSet author="DBA" id="000000_initial_scripts-schema">
+        <comment>Registration Schema</comment>
+        <sqlFile path="/src/main/resources/schema/ddl/000000_initial_scripts.sql"/>
+        <rollback>
+            <sqlFile path="/src/main/resources/schema/ddl/999999_initial_scripts_rollback.sql"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

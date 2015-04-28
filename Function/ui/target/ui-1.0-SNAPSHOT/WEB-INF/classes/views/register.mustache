@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{msg}}</title>
+
+    <h1>{{msg}}</h1>
+</head>
+<body>
+    <form action="submitRegistration" method="post">
+
+        <table>
+
+        <tr>
+            <td>User Name</td> <td> <input type="text" name ="userName" /> </td>
+        </tr>
+
+        <tr>
+            <td>Password</td> <td> <input type="text" name ="password" /> </td>
+        </tr>
+
+        <tr>
+            <td>User DOB</td> <td> <input type="text" name ="userDOB" /> </td>
+        </tr>
+
+        <tr>
+            <td>User Interest</td> <td> <select name="userInterest" multiple>
+                                            <option value = "Football">Football</option>
+                                            <option value = "Reading">Reading</option>
+                                            <option value = "Java">Java</option>
+                                        </select> </td>
+        </tr>
+
+            <tr>
+            <td> <input type="submit"/> </td>
+        </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
