@@ -3,9 +3,12 @@ package com.ibapp.springmvc.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.mustache.MustacheViewResolver;
 import org.springframework.web.servlet.view.mustache.java.MustacheJTemplateFactory;
@@ -16,11 +19,19 @@ import org.springframework.web.servlet.view.mustache.java.MustacheJTemplateFacto
 
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = "com.ibapp.springmvc.controllers")
+@ComponentScan(basePackages = "com.ibapp.springmvc")
 public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 
+
+    @Override
+    public void addResourceHandlers(final ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/js/**").addResourceLocations("/assets/js/");
+        registry.addResourceHandler("/css/**").addResourceLocations("/assets/css/");
+        registry.addResourceHandler("/images/**").addResourceLocations("/assets/content/images/");
+    }
+
     @Bean
-    public ViewResolver getViewResolver(ResourceLoader resourceLoader){
+    public ViewResolver getViewResolver(ResourceLoader resourceLoader) {
 
         MustacheViewResolver mustacheViewResolver = new MustacheViewResolver();
         mustacheViewResolver.setPrefix("classpath:/views/");
@@ -35,16 +46,6 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 
         return mustacheViewResolver;
     }
-
-   /*@Bean
-    public ViewResolver getJspViewResolver(){
-
-        InternalResourceViewResolver jspViewResolver = new InternalResourceViewResolver();
-        jspViewResolver.setPrefix("/WEB-INF/views/");
-        jspViewResolver.setSuffix(".jsp");
-
-        return jspViewResolver;
-    }*/
 
 
 }

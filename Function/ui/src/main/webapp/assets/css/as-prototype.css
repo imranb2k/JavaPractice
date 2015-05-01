@@ -1,0 +1,42 @@
+/*
+	* Extends or redefines existing classes
+	* To be refactored
+*/
+
+nav.horizontal-navigation {
+  clear: left;
+  margin-top:2em;
+}
+
+/*form {
+	margin: 1em;
+}
+*/
+
+#questions label {
+	display:block;
+	margin:1em 0;
+}
+#questions input, select, textarea {
+	clear:left;
+	font-size: 1em;
+	padding:0.5em;
+	display: block;
+}
+#questions input[type="checkbox"] {
+  clear: none;
+  display: inline-block;
+}
+#questions textarea {
+	font-family: Sans-Serif;
+}
+#questions input[id^="date-"] {
+	width:3em;
+}
+#questions input[type="submit"] {
+    margin:1em 0;
+}
+
+#dialog-in-development {
+	display:none;
+}

@@ -1,6 +1,5 @@
 package com.ibapp.service.rest.resources;
 
-
 import com.ibapp.domain.Register;
 import com.ibapp.persistence.RegisterMapper;
 import com.ibapp.service.RegisterService;
@@ -60,7 +59,7 @@ public class RegisterResource {
         try {
             return Response.status(200).entity(registerService.getRegisterById(id)).build();
         } catch (Exception e) {
-            LOG.error("Failed to get list of register : ", e);
+            LOG.error("Failed to get register by id: ", e);
         }
         return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Server encountered an error ").build();
     }
@@ -68,11 +67,11 @@ public class RegisterResource {
     @POST
     @Path("/")
     @Consumes(MediaType.APPLICATION_JSON)
-    public  Response createRegister(String referralRequest){
+    public  Response createRegister(Register register){
 
         try {
 
-            Register register = RestUtil.readAsObjectOf(Register.class, referralRequest);
+         //   Register register = RestUtil.readAsObjectOf(Register.class, referralRequest);
             registerService.insertRegister(register);
             return Response.status(200).build();
 

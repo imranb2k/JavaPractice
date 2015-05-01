@@ -1,0 +1,51 @@
+    <html lang="en">
+
+{{>_head.mustache }}
+
+<body class="js-enabled">
+<script type="text/javascript">
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+<header class="header" id="header">
+    <div style="display: block;">
+        <!--start header-->
+        <header role="banner" id="global-header" class="with-propositionx">
+            <div class="header-wrapper">
+                <div class="header-global">
+                    <div class="header-logo">
+                        <a href="#" title="Validation screen" id="logo" class="content">
+                            <img src="images/header_ho_logo.png" alt="">
+                        </a>
+                    </div>
+                    <h1 class="bold-medium"><abbr title="Dashboard">Registered Users</abbr></h1>
+                </div>
+            </div>
+            <div class="header-bar"></div>
+        </header>
+        <!--end header-->
+    </div>
+</header>
+<header class="header-claim-data"></header>
+<main id="page-container" role="main" aria-live="polite">
+    <div class="main-area">
+        <div>
+            <div id="notification">
+                <div style="display: block;"></div>
+            </div>
+
+            <nav class="horizontal-navigation">
+                <a class="button in-development" href="#">Exit (don't save)</a>
+            </nav>
+            <div id="tasks-table">
+                {{> register2.mustache}}
+            </div>
+        </div>
+    </div>
+</main>
+
+{{> _footer.mustache }}
+
+{{> _local-scripts.mustache }}
+
+</body>
+</html>

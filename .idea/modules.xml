@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Function/DbScripts/DbScripts.iml" filepath="$PROJECT_DIR$/Function/DbScripts/DbScripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPractice.iml" filepath="$PROJECT_DIR$/JavaPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Function/common/common.iml" filepath="$PROJECT_DIR$/Function/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/Function/javapractice.iml" filepath="$PROJECT_DIR$/Function/javapractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Function/service/service.iml" filepath="$PROJECT_DIR$/Function/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Function/ui/ui.iml" filepath="$PROJECT_DIR$/Function/ui/ui.iml" />

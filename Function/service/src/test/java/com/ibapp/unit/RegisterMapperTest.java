@@ -20,11 +20,11 @@ public class RegisterMapperTest {
     RegisterMapper registerMapper;
 
     @Test
-/*    public void testInsertRegister() throws Exception{
+    public void testInsertRegister() throws Exception{
 
         registerMapper.insertRegister(getRegister());
 
-    }*/
+    }
 
 /*    public void testUpdateRegister() throws Exception{
 
@@ -44,18 +44,18 @@ public class RegisterMapperTest {
 
     }*/
 
-    public void testGetAllRegisters() throws Exception{
+/*    public void testGetAllRegisters() throws Exception{
 
         registerMapper.getAllRegister();
 
-    }
+    }*/
 
     private Register getRegister() {
 
         Register register = new Register();
-        register.setId(1);
-        register.setUserName("John");
-        register.setPassword("password");
+       // register.setId(2);
+        register.setUserName("Test Name3");
+        register.setPassword("Test Password3");
 
         return register;
     }
