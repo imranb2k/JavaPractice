@@ -1,43 +1,76 @@
-
 <!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{{msg}}</title>
+<html lang="en">
 
-    <h1>{{msg}}</h1>
-</head>
-<body>
-    <form action="submitRegistration" method="post">
+{{>_head.mustache }}
 
-        <table>
+<body class="js-enabled">
+<script type="text/javascript">
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+<header class="header" id="header">
+    <div style="display: block;">
+        <!--start header-->
+        <header role="banner" id="global-header" class="with-propositionx">
+            <div class="header-wrapper">
+                <div class="header-global">
+                    <div class="header-logo">
+                        <a href="http://localhost:8089/springmvc/dispatcher/login" title="Validation screen" id="logo" class="content">
+                            <img src="images/header_ho_logo.png" alt="">
+                        </a>
+                    </div>
+                    <h1 class="bold-medium"><abbr title="Dashboard">Registration</abbr></h1>
+                </div>
+            </div>
+            <div class="header-bar"></div>
+        </header>
+        <!--end header-->
+    </div>
+</header>
+<header class="header-claim-data"></header>
+<main id="page-container" role="main" aria-live="polite">
+    <div class="main-area">
+        <div>
+            <div id="notification">
+                <div style="display: block;"></div>
+            </div>
 
-        <tr>
-            <td>User Name</td> <td> <input type="text" name ="userName" /> </td>
-        </tr>
+            <div id="questions">
+                <div style="display: block;">
+                    <div class="start-content">
+                        <div class="text-content">
+                            <div class="form-group">
+                                <form action="submitRegistration" method="post">
+                                    <fieldset>
 
-        <tr>
-            <td>Password</td> <td> <input type="text" name ="password" /> </td>
-        </tr>
+                                        <legend class="form-label" for=""></legend>
 
-        <tr>
-            <td>User DOB</td> <td> <input type="text" name ="userDOB" /> </td>
-        </tr>
+                                        <label for="noLongerRequestingIA">
+                                            Name <input type="text" name ="userName" />
+                                        </label>
 
-        <tr>
-            <td>User Interest</td> <td> <select name="userInterest" multiple>
-                                            <option value = "Football">Football</option>
-                                            <option value = "Reading">Reading</option>
-                                            <option value = "Java">Java</option>
-                                        </select> </td>
-        </tr>
+                                        <label for="noLongerRequestingIA">
+                                            Password <input type="text" name ="password" />
+                                        </label>
 
-            <tr>
-            <td> <input type="submit"/> </td>
-        </tr>
+                                        <input type="submit" value="Submit" class="button">
 
-        </table>
-    </form>
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{{> _footer.mustache }}
+
+{{> _local-scripts.mustache }}
 
 </body>
 </html>
+
+

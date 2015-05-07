@@ -2,59 +2,239 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c8e582-9fbf-4ddd-95df-0223cfc9e4ef" name="Default" comment="commit 2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/_footer.mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/_head.mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/_local-scripts.mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/common/pom.xml" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\service\Hibernate.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\service\target\classes\com\ibapp\domain\Register.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\service\target\service-1.0-SNAPSHOT\WEB-INF\classes\com\ibapp\domain\Register.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\target\javapractice-build.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\SpringMVC.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\src\main\webapp\WEB-INF\views\register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\src\main\webapp\WEB-INF\views\registrationComplete.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\ui-1.0-SNAPSHOT\WEB-INF\views\register.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\ui-1.0-SNAPSHOT\WEB-INF\views\registrationComplete.jsp" afterPath="" />
-      <change type="MOVED" beforePath="C:\JavaPractice\Function\service\src\main\java\com\ibapp\domain\Register.java" afterPath="$PROJECT_DIR$/Function/common/src/main/java/com/ibapp/domain/Register.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/com/ibapp/springmvc/configuration/ApplicationConfiguration.class" afterPath="$PROJECT_DIR$/Function/ui/target/classes/com/ibapp/springmvc/configuration/ApplicationConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/springmvc/configuration/ApplicationConfiguration.class" afterPath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/springmvc/configuration/ApplicationConfiguration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/logedin.mustache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/login.mustache" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\service\src\main\java\com\ibapp\service\rest\resources\RestUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\service\target\classes\com\ibapp\service\rest\resources\RestUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-114x114.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-120x120.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-152x152.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-57x57.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-60x60.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\apple-touch-icon-76x76.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-01.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-02.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-03.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-04.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-05.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-06.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-07.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-08.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-09.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\decision-letter\page-10.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\family\id1-family1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\family\id1-family2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\footer_crest.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\gov.uk_logotype_crown.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\gov.uk_logotype_crown_invert.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\gov.uk_logotype_crown_invert_trans.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\govuk-crest-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\header_ho_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\Document2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\Document2_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\Form.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\Form_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\accommodation.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\accommodation_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\accordian-arrow-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\accordian-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\alert.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\alert_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\appeal-jr.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\appeal-jr_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\arrow-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\assured.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\assured_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\audio.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\audio_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\booking.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\booking_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\card.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\card_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\check.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\check_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\close.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\close_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\communication.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\communication_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\contact.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\bis_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\bis_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\bis_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\bis_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\bis_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\bis_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\coastguard_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\coastguard_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\coastguard_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\coastguard_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\coastguard_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\coastguard_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\hmrc_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\hmrc_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\hmrc_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\hmrc_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\hmrc_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\hmrc_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ho_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ho_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ho_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ho_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ho_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ho_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\mod_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\mod_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\mod_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\mod_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\mod_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\mod_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\org_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\org_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\org_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\org_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\org_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\org_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\portcullis_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\portcullis_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\portcullis_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\portcullis_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\portcullis_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\portcullis_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\so_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\so_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\so_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\so_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\so_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\so_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukaea_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukaea_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukaea_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukaea_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukaea_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukaea_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukho_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukho_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukho_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukho_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukho_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\ukho_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\wales_crest_13px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\wales_crest_13px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\wales_crest_18px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\wales_crest_18px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\wales_crest_27px.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\crests\wales_crest_27px_x2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\decision.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\document.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\document_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\ellipsis.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\ellipsis_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\export.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\export_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\external-links\external-link-24x24.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\external-links\external-link-black-12x12.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\external-links\external-link-black-24x24.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\external-links\external-link.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-calendar-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-file-download-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-file-download.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-important-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-important.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-information-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-information.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-locator-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-locator.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-pointer-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-pointer-black-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-pointer-black.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-pointer-indexed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-pointer.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-print.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-search-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-search.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-1-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-10-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-10.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-11-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-11.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-12-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-12.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-13-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-13.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-14-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-14.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-2-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-3-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-4-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-5-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-6-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-7-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-8-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-9-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\icon-steps\icon-step-9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\interview.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\interview_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\jr.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\letter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\letter_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\money.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\person.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\person_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\player-icon-forward.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\player-icon-pause.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\player-icon-play.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\player-icon-rewind.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\player-icon-volume.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\referral.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\referral_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\reporting.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\reporting_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\routing.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\routing2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\routing2_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\routing_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\support.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\support_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\transport.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\transport_w.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\transportation.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\triangle_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\icons\triangle_blue_down.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\opengraph-image.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\profiles\id1-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\profiles\id2-portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\JavaPractice\Function\ui\target\classes\images\tick.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/com/ibapp/springmvc/controllers/HomeController.class" afterPath="$PROJECT_DIR$/Function/ui/target/classes/com/ibapp/springmvc/controllers/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/springmvc/controllers/HomeController.class" afterPath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/springmvc/controllers/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/service-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/persistence/RegisterMapper.class" afterPath="$PROJECT_DIR$/Function/service/target/service-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/persistence/RegisterMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/test-classes/com/ibapp/unit/RegisterMapperTest.class" afterPath="$PROJECT_DIR$/Function/service/target/test-classes/com/ibapp/unit/RegisterMapperTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/classes/com/ibapp/service/rest/resources/RegisterResource.class" afterPath="$PROJECT_DIR$/Function/service/target/classes/com/ibapp/service/rest/resources/RegisterResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/service-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/service/rest/resources/RegisterResource.class" afterPath="$PROJECT_DIR$/Function/service/target/service-1.0-SNAPSHOT/WEB-INF/classes/com/ibapp/service/rest/resources/RegisterResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/DbScripts/target/dbscripts-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/Function/DbScripts/target/dbscripts-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT/WEB-INF/lib/service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/service-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/Function/service/target/service-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/Function/ui/target/ui-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/ApplicationConfiguration.java" afterPath="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/ApplicationConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/CheckingWebAppInitialiser.java" afterPath="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/CheckingWebAppInitialiser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/test-classes/com/ibapp/springmvc/StartApplication.class" afterPath="$PROJECT_DIR$/Function/ui/target/test-classes/com/ibapp/springmvc/StartApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java" afterPath="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/unit/RegisterMapperTest.java" afterPath="$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/unit/RegisterMapperTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RegisterResource.java" afterPath="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RegisterResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/surefire-reports/TEST-com.ibapp.unit.RegisterMapperTest.xml" afterPath="$PROJECT_DIR$/Function/service/target/surefire-reports/TEST-com.ibapp.unit.RegisterMapperTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/application.properties" afterPath="$PROJECT_DIR$/Function/ui/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/surefire-reports/com.ibapp.unit.RegisterMapperTest.txt" afterPath="$PROJECT_DIR$/Function/service/target/surefire-reports/com.ibapp.unit.RegisterMapperTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/Function/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/DbScripts/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/Function/DbScripts/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/Function/service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/Function/ui/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/pom.xml" afterPath="$PROJECT_DIR$/Function/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/DbScripts/pom.xml" afterPath="$PROJECT_DIR$/Function/DbScripts/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/pom.xml" afterPath="$PROJECT_DIR$/Function/service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/pom.xml" afterPath="$PROJECT_DIR$/Function/ui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/service/service.iml" afterPath="$PROJECT_DIR$/Function/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/ui.iml" afterPath="$PROJECT_DIR$/Function/ui/ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/test/java/com/ibapp/springmvc/StartApplication.java" afterPath="$PROJECT_DIR$/Function/ui/src/test/java/com/ibapp/springmvc/StartApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/resources/views/_footer.mustache" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/_footer.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/views/_footer.mustache" afterPath="$PROJECT_DIR$/Function/ui/target/classes/views/_footer.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/views/homepage.mustache" afterPath="$PROJECT_DIR$/Function/ui/target/classes/views/homepage.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/resources/views/register.mustache" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/register.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/views/register.mustache" afterPath="$PROJECT_DIR$/Function/ui/target/classes/views/register.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/src/main/resources/views/registrationComplete.mustache" afterPath="$PROJECT_DIR$/Function/ui/src/main/resources/views/registrationComplete.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Function/ui/target/classes/views/registrationComplete.mustache" afterPath="$PROJECT_DIR$/Function/ui/target/classes/views/registrationComplete.mustache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaPractice.iws" />
@@ -85,21 +265,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_head.mustache" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/_head.mustache">
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationConfiguration.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/ApplicationConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37254903">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.64705884">
+              <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -126,16 +296,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Function/SpringMVC/src/main/java/com/ibapp/springmvc/configuration/CheckingWebAppInitialiser.java" />
-        <option value="$PROJECT_DIR$/Function/Hibernate/pom.xml" />
-        <option value="$PROJECT_DIR$/Function/SpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/Function/Hibernate/src/test/java/com/ibapp/unit/RegisterMapperTest.java" />
         <option value="$PROJECT_DIR$/Function/SpringMVC/src/main/resources/views/registrationComplete.mustache" />
         <option value="$PROJECT_DIR$/Function/SpringMVC/src/main/resources/views/register.mustache" />
         <option value="$PROJECT_DIR$/Function/Hibernate/src/main/java/com/ibapp/domain/Register.java" />
         <option value="$PROJECT_DIR$/Function/SpringMVC/src/main/java/com/ibapp/springmvc/controllers/HomeController.java" />
-        <option value="$PROJECT_DIR$/Function/ui/src/test/java/com/ibapp/springmvc/StartApplication.java" />
-        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/registrationComplete.mustache" />
         <option value="$PROJECT_DIR$/Function/service/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/RegisterResource.java" />
         <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/configuration/RestSonfiguration.java" />
@@ -164,19 +329,24 @@
         <option value="$PROJECT_DIR$/Function/ui/pom.xml" />
         <option value="$PROJECT_DIR$/Function/common/src/main/java/com/ibapp/domain/Register.java" />
         <option value="$PROJECT_DIR$/Function/ui/src/main/webapp/WEB-INF/views/register.jsp" />
-        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/register.mustache" />
-        <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RegisterResource.java" />
-        <option value="$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/unit/RegisterMapperTest.java" />
         <option value="$PROJECT_DIR$/Function/ui/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/persistence/RegisterMapper.java" />
         <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/impl/RegisterServiceImpl.java" />
         <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/RegisterService.java" />
-        <option value="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java" />
-        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/register2.mustache" />
         <option value="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/CheckingWebAppInitialiser.java" />
-        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache" />
+        <option value="$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/unit/RegisterMapperTest.java" />
+        <option value="$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RegisterResource.java" />
+        <option value="$PROJECT_DIR$/Function/ui/src/test/java/com/ibapp/springmvc/StartApplication.java" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/_footer.mustache" />
         <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/_head.mustache" />
         <option value="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/ApplicationConfiguration.java" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/register2.mustache" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/registrationComplete.mustache" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/logedin.mustache" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/login.mustache" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/resources/views/register.mustache" />
+        <option value="$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java" />
       </list>
     </option>
   </component>
@@ -249,6 +419,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -297,6 +468,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -368,6 +540,18 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -392,10 +576,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,7 +635,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,13 +673,146 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="configuration" />
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Function" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Function" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Function" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Function" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaPractice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Function" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -523,17 +840,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JavaPractice\Function\ui\src\main\resources\views" />
       <recent name="C:\JavaPractice\Function\ui\src\main\resources" />
       <recent name="C:\JavaPractice\Function\ui\src\main\webapp" />
-      <recent name="C:\JavaPractice\Function\ui\src\main\resources\views" />
       <recent name="$PROJECT_DIR$/Function/SpringMVC/src/main/resources/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JavaPractice\Function\ui\src\main\resources\views" />
       <recent name="C:\JavaPractice\Function\ui\src\main\webapp\assets\js" />
       <recent name="C:\JavaPractice\Function\ui\src\main\webapp\assets" />
       <recent name="C:\JavaPractice\Function\ui\src\main\webapp\assets\content" />
       <recent name="C:\JavaPractice\Function\ui\src\main\webapp" />
-      <recent name="$PROJECT_DIR$/Function/SpringMVC/src/main/webapp/WEB-INF/views" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ibapp.service" />
@@ -817,8 +1134,8 @@
         <item index="0" class="java.lang.String" itemvalue="Application.StartApplication" />
         <item index="1" class="java.lang.String" itemvalue="Application.TomcatApplicationServer" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.RegisterMapperTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RegisterMapperTest.testGetAllRegisters" />
-        <item index="4" class="java.lang.String" itemvalue="Application.StartApplication (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.StartApplication (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RegisterMapperTest.testGetAllRegisters" />
       </list>
     </recent_temporary>
   </component>
@@ -845,11 +1162,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1696" height="1026" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.375134" sideWeight="0.50222504" order="11" side_tool="true" content_ui="tabs" />
@@ -864,13 +1181,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24984106" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27262568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26815644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32589287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32513967" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -886,7 +1203,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -895,13 +1212,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.4.RELEASE/spring-context-4.1.4.RELEASE.jar!/org/springframework/stereotype/Component.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22462562">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Function/service/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08287293">
@@ -927,13 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48618785">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/Exceptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -972,22 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/test/java/com/ibapp/springmvc/StartApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58498895">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/service/rest/TomcatApplicationServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22516556">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/StatusResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6247241">
@@ -999,20 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16855524">
           <caret line="7" column="43" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/registrationComplete.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.375">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1068,20 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/register.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23970588">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/unit/RegisterMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1926346">
-          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1110,13 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RegisterResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.4.RELEASE/spring-webmvc-4.1.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -1135,27 +1387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="459" column="0" selection-start-line="459" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.4.RELEASE/spring-webmvc-4.1.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/register2.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1183,34 +1414,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2407932">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/webapp/assets/js/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Function/ui/src/main/webapp/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/CheckingWebAppInitialiser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40412045">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,49 +1426,148 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36528927">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/_local-scripts.mustache">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25289255">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/_footer.mustache">
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/webapp/assets/js/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44958678">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/Exceptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10776545">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/CheckingWebAppInitialiser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/test/java/com/ibapp/springmvc/StartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3169572">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/_head.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/configuration/ApplicationConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37254903">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/_footer.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16859505">
+          <caret line="6" column="213" selection-start-line="6" selection-start-column="213" selection-end-line="6" selection-end-column="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/service/rest/TomcatApplicationServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24247226">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/service/src/main/java/com/ibapp/service/rest/resources/RegisterResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2393026">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/register2.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/homepage.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3272727">
+          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/logedin.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20661157">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/login.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44958678">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/register.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44958678">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/resources/views/registrationComplete.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44958678">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.4.RELEASE/spring-webmvc-4.1.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34717607">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33222592">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/service/src/test/java/com/ibapp/unit/RegisterMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2850972">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Function/ui/src/main/java/com/ibapp/springmvc/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64705884">
+          <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
           <folding />
         </state>
       </provider>

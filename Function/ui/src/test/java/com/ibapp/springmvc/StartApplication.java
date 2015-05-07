@@ -15,7 +15,7 @@ public class StartApplication {
 
     public static void main(String[] args) throws Exception {
 
-        String webAppDirLocation = "Function/ui/src/main";
+        String webAppDirLocation = "Function/ui/src/main/webapp";
 
         Tomcat tomcat = new Tomcat();
 

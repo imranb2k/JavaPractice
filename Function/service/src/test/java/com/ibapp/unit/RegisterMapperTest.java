@@ -54,8 +54,8 @@ public class RegisterMapperTest {
 
         Register register = new Register();
        // register.setId(2);
-        register.setUserName("Test Name3");
-        register.setPassword("Test Password3");
+        register.setUserName("Test Name 3");
+        register.setPassword("Test Password 3");
 
         return register;
     }

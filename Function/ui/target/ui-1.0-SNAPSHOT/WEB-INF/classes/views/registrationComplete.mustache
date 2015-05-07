@@ -1,33 +1,48 @@
 <!doctype html>
-<head>
-    <title>{{msg}}</title>
+<html lang="en">
 
-    <h1>Registration Complete</h1>
-</head>
-<body>
+{{>_head.mustache }}
 
-    <table>
-        <tr>
-            <td>User Name</td>
-            <td>{{register.userName}}</td>
-        </tr>
+<body class="js-enabled">
+<script type="text/javascript">
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
+<header class="header" id="header">
+    <div style="display: block;">
+        <!--start header-->
+        <header role="banner" id="global-header" class="with-propositionx">
+            <div class="header-wrapper">
+                <div class="header-global">
+                    <div class="header-logo">
+                        <a href="http://localhost:8089/springmvc/dispatcher/login" title="Validation screen" id="logo" class="content">
+                            <img src="images/header_ho_logo.png" alt="">
+                        </a>
+                    </div>
+                    <h1 class="bold-medium"><abbr title="Dashboard">Registration Complete</abbr></h1>
+                </div>
+            </div>
+            <div class="header-bar"></div>
+        </header>
+        <!--end header-->
+    </div>
+</header>
+<header class="header-claim-data"></header>
+<main id="page-container" role="main" aria-live="polite">
+    <div class="main-area">
+        <div>
+            <div id="notification">
+                <div style="display: block;"></div>
+            </div>
 
-        <tr>
-            <td>User Name</td>
-            <td>{{register.password}}</td>
-        </tr>
+            <h1 class="heading-large">Thank You {{register.userName}}</h1>
 
-        <tr>
-            <td>User DOB</td>
-            <td>{{register.userDOB}}</td>
-        </tr>
+        </div>
+    </div>
+</main>
 
-        <tr>
-            <td>User Interest</td>
-            <td>{{register.userInterest}}</td>
-        </tr>
-    </table>
+{{> _footer.mustache }}
 
+{{> _local-scripts.mustache }}
 
 </body>
 </html>

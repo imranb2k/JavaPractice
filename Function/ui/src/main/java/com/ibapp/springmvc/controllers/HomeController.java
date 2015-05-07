@@ -1,5 +1,6 @@
 package com.ibapp.springmvc.controllers;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.ibapp.domain.Register;
 import com.ibapp.service.RegisterService;
 import com.ibapp.service.impl.RegisterServiceImpl;
@@ -31,7 +32,6 @@ public class HomeController {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    private String regsiterByIdUrl = "http://localhost:8082/register/1";
     private String allRegsiterUrl = "http://localhost:8082/register";
 
     @ModelAttribute
@@ -41,7 +41,92 @@ public class HomeController {
 
     }
 
-   /* @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
+    @RequestMapping(value = "/registerForm2", method = RequestMethod.GET)
+    public ModelAndView getRegister () {
+
+        logger.info("Welcome home to the register method!");
+
+        ModelAndView model = new ModelAndView("register");
+
+        return model;
+
+    }
+
+    @RequestMapping(value = "/submitRegistration", method = RequestMethod.POST)
+    public String submitRegister (@ModelAttribute("register") Register register) throws Exception {
+
+        logger.info("Welcome home to the add register method!");
+
+        restTemplate.postForEntity(allRegsiterUrl, register, Register[].class);
+
+        return "registrationComplete";
+
+    }
+
+    @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
+    public String getRegister (Model model) {
+
+        logger.info("Welcome home to the registered users method!");
+
+        ResponseEntity<Register[]> responseEntity = null;
+        Register[] register = null;
+
+        responseEntity = restTemplate.getForEntity(allRegsiterUrl, Register[].class);
+        register = responseEntity.getBody();
+
+        model.addAttribute("register", register);
+
+        return "homepage";
+
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public ModelAndView login () {
+
+        logger.info("Welcome home to the login method!");
+
+        ModelAndView model = new ModelAndView("login");
+
+        return model;
+
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String loginValidate (@ModelAttribute("register") Register register) throws Exception {
+
+        logger.info("Welcome home to the login validate method!");
+
+        Register[] register1 = null;
+
+        ResponseEntity<Register[]> responseEntity = null;
+
+        responseEntity = restTemplate.getForEntity(allRegsiterUrl, Register[].class);
+        register1 = responseEntity.getBody();
+
+        for (int i=0; i < register1.length; i++)  {
+
+
+            if (register.getUserName().equals(register1[i].getUserName()) ) {
+                return "logedin";
+                }
+            }
+        return "login";
+    }
+
+    /*    @RequestMapping(value = "/submitRegistration", method = RequestMethod.POST)
+    public String submitRegister (Model model, Register register) throws Exception {
+
+        logger.info("Welcome home to the add register method!");
+
+        restTemplate.postForObject("http://localhost:8082/register", register, Register.class);
+
+        model.addAttribute("register", register);
+
+        return "registrationComplete";
+
+    }*/
+
+     /* @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
     public String getRegister (Model model) {
 
         logger.info("Welcome home to the register method!");
@@ -67,37 +152,6 @@ public class HomeController {
             }
         }*/
 
-    @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
-    public String getRegister (Model model) {
-
-        logger.info("Welcome home to the register method!");
-
-        ResponseEntity<Register[]> responseEntity = null;
-        Register[] register = null;
-
-            responseEntity = restTemplate.getForEntity(allRegsiterUrl, Register[].class);
-            register = responseEntity.getBody();
-
-        model.addAttribute("register", register);
-
-        return "homepage";
-
-    }
-
-
-    @RequestMapping(value = "/submitRegistration", method = RequestMethod.POST)
-    public String submitRegister (Model model, Register register) throws Exception {
-
-        logger.info("Welcome home to the add register method!");
-
-        restTemplate.postForObject("http://localhost:8082/register", register, Register.class);
-
-        model.addAttribute("register", register);
-
-        return "registrationComplete";
-
-    }
-
     /*  @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
     public String getRegister () {
 
@@ -112,30 +166,5 @@ public class HomeController {
 
     // register = restTemplate.getForObject("http://localhost:8082/register/1", Register.class);
 
-
-/*    @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
-    public ModelAndView getRegister () {
-
-        logger.info("Welcome home to the register method!");
-
-        ModelAndView model = new ModelAndView("register");
-
-
-        return model;
-
-    }*/
-
-/*    @RequestMapping(value = "/submitRegistration", method = RequestMethod.POST)
-    public ModelAndView submitRegister (@ModelAttribute("register") Register register) throws Exception {
-
-
-        logger.info("Welcome home to the add register method!");
-
-        ModelAndView model = new ModelAndView("registrationComplete");
-
-
-        return model;
-
-    }*/
 
 }

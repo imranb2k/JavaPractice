@@ -18,7 +18,7 @@
                             <img src="images/header_ho_logo.png" alt="">
                         </a>
                     </div>
-                    <h1 class="bold-medium"><abbr title="Dashboard">Registration Complete</abbr></h1>
+                    <h1 class="bold-medium"><abbr title="Dashboard">Registration</abbr></h1>
                 </div>
             </div>
             <div class="header-bar"></div>
@@ -34,8 +34,34 @@
                 <div style="display: block;"></div>
             </div>
 
-            <h1 class="heading-large">Thank You {{register.userName}}</h1>
+            <div id="questions">
+                <div style="display: block;">
+                    <div class="start-content">
+                        <div class="text-content">
+                            <div class="form-group">
+                                <form action="login" method="post">
+                                    <fieldset>
 
+                                        <legend class="form-label" for=""></legend>
+
+                                        <label for="noLongerRequestingIA">
+                                            Name <input type="text" name ="userName" />
+                                        </label>
+
+                                        <label for="noLongerRequestingIA">
+                                            Password <input type="text" name ="password" />
+                                        </label>
+
+                                        <input type="submit" value="Submit" class="button">
+
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -46,3 +72,5 @@
 
 </body>
 </html>
+
+

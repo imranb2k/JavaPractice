@@ -1,4 +1,3 @@
-com\ibapp\service\rest\resources\RestUtil.class
 com\ibapp\service\rest\resources\Exceptions.class
 com\ibapp\service\RegisterService.class
 com\ibapp\persistence\SchemaMapper.class

@@ -1,5 +1,6 @@
 package com.ibapp.service.rest.resources;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ibapp.domain.Register;
 import com.ibapp.persistence.RegisterMapper;
 import com.ibapp.service.RegisterService;
@@ -21,22 +22,13 @@ import javax.ws.rs.core.Response;
 @Component
 public class RegisterResource {
 
+
     @Autowired
     public RegisterService registerService;
 
-/*    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    @Path("/{msg}")
-    public Response printMessage(@PathParam("msg") String msg) {
-
-        String result = "Restful example: " + msg;
-
-    //   return Response.ok(msg).build();
-        return  Response.status(200).entity(result).build();
-
-    }*/
-
     private static final Logger LOG = LoggerFactory.getLogger(RegisterResource.class);
+
+    private static ObjectMapper MAPPER = new ObjectMapper();
 
     @GET
     @Path("/")
@@ -71,7 +63,6 @@ public class RegisterResource {
 
         try {
 
-         //   Register register = RestUtil.readAsObjectOf(Register.class, referralRequest);
             registerService.insertRegister(register);
             return Response.status(200).build();
 
@@ -82,6 +73,33 @@ public class RegisterResource {
 
     }
 
+/*    @POST
+    @Path("/")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public  Response createRegister(String registerDetails){
 
+        try {
+            Register register = MAPPER.readValue(registerDetails, Register.class);
+            registerService.insertRegister(register);
+            return Response.status(200).build();
+
+        } catch (Exception e) {
+            LOG.error("Failed to insert register : ", e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Server encountered an error ").build();
+        }
+
+    }*/
+
+    /*    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/{msg}")
+    public Response printMessage(@PathParam("msg") String msg) {
+
+        String result = "Restful example: " + msg;
+
+    //   return Response.ok(msg).build();
+        return  Response.status(200).entity(result).build();
+
+    }*/
 
 }
