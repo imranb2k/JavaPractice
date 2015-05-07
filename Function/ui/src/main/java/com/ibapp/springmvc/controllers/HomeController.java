@@ -12,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -92,7 +93,7 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String loginValidate (@ModelAttribute("register") Register register) throws Exception {
+    public String loginValidate (@ModelAttribute("register") Register register, BindingResult bindingResult) throws Exception {
 
         logger.info("Welcome home to the login validate method!");
 
@@ -105,12 +106,11 @@ public class HomeController {
 
         for (int i=0; i < register1.length; i++)  {
 
-
-            if (register.getUserName().equals(register1[i].getUserName()) ) {
+            if (register.getUserName().equals(register1[i].getUserName()) && register.getPassword().equals(register1[i].getPassword())) {
                 return "logedin";
                 }
             }
-        return "login";
+        return "loginError";
     }
 
     /*    @RequestMapping(value = "/submitRegistration", method = RequestMethod.POST)

@@ -33,38 +33,31 @@
             <div id="notification">
                 <div style="display: block;"></div>
             </div>
-
-            <div id="questions">
-
                 <div style="display: block;">
                     <div class="start-content">
                         <div class="text-content">
+                            <div id="questions">
 
-                            <h1 class="heading-large">Create an account</h1>
+                                <h1 class="heading-large">Sign in</h1>
 
+                                <p>
+                                    Sign in or
+                                    <a title="create an account" href="http://localhost:8089/springmvc/dispatcher/registerForm2">create an account</a>
+                                    to get started.
+                                </p>
+                                <font size="4" color="red">Incorrect Name or Password</font>
                             <div class="form-group">
-                                <form action="submitRegistration" method="post">
+                                <form action="login" method="post">
                                     <fieldset>
-
-                                        <legend class="form-label" for=""></legend>
-
                                         <label for="noLongerRequestingIA">
-                                           First name <input type="text" name ="userName" />
+                                            <b>Name</b> <input type="text" name ="userName" />
                                         </label>
 
                                         <label for="noLongerRequestingIA">
-                                            Last name <input type="text" />
+                                            <b>Password</b> <input type="password" name ="password" />
                                         </label>
 
-                                        <label for="noLongerRequestingIA">
-                                            Email address <input type="text" />
-                                        </label>
-
-                                        <label for="noLongerRequestingIA">
-                                            Password <input type="password" name ="password" />
-                                        </label>
-
-                                        <input type="submit" value="Submit" class="button">
+                                        <input type="submit" value="Sign in" class="button">
 
                                     </fieldset>
                                 </form>
