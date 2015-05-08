@@ -36,12 +36,9 @@
             <nav class="horizontal-navigation">
                 <a class="button in-development" href="#">Exit (don't save)</a>
             </nav>
-            <div id="tasks-table">
-                {{> register2.mustache}}
-            </div>
-            <div class="form-group">
-                {{> login2.mustache}}
-            </div>
+            {{# ia}}
+                {{# state}} {{> products.mustache}} {{/state}}
+            {{/ia}}
         </div>
     </div>
 </main>

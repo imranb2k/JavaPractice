@@ -66,7 +66,7 @@ public class HomeController {
         iaProduct.setSectionB(false);
 
         Product section94product = new Product();
-        iaProduct.setState(false);
+        section94product.setState(false);
         section94product.setSectionA(true);
         section94product.setSectionB(true);
 

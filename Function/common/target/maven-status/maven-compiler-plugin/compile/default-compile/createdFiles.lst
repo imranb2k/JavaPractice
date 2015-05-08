@@ -1,2 +1,4 @@
-com\ibapp\domain\Product.class
+com\ibapp\domain\Products.class
 com\ibapp\domain\Register.class
+com\ibapp\domain\Product.class
+com\ibapp\domain\ProductsImpl.class
