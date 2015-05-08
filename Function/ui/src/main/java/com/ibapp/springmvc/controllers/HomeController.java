@@ -1,26 +1,19 @@
 package com.ibapp.springmvc.controllers;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
+import com.ibapp.domain.Product;
+import com.ibapp.domain.Products;
+import com.ibapp.domain.ProductsImpl;
 import com.ibapp.domain.Register;
-import com.ibapp.service.RegisterService;
-import com.ibapp.service.impl.RegisterServiceImpl;
-import com.sun.javafx.sg.prism.NGShape;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.util.List;
 
 /**
  * Created by imran on 10/04/15.
@@ -67,6 +60,17 @@ public class HomeController {
     @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
     public String getRegister (Model model) {
 
+        Product iaProduct = new Product();
+        iaProduct.setState(true);
+        iaProduct.setSectionA(true);
+        iaProduct.setSectionB(false);
+
+        Product section94product = new Product();
+        iaProduct.setState(false);
+        section94product.setSectionA(true);
+        section94product.setSectionB(true);
+
+
         logger.info("Welcome home to the registered users method!");
 
         ResponseEntity<Register[]> responseEntity = null;
@@ -76,6 +80,8 @@ public class HomeController {
         register = responseEntity.getBody();
 
         model.addAttribute("register", register);
+        model.addAttribute("ia", iaProduct);
+        model.addAttribute("section94", section94product);
 
         return "homepage";
 
@@ -93,7 +99,7 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String loginValidate (@ModelAttribute("register") Register register, BindingResult bindingResult) throws Exception {
+    public String loginValidate (@ModelAttribute("register") Register register) throws Exception {
 
         logger.info("Welcome home to the login validate method!");
 

@@ -37,7 +37,8 @@ public class Register {
 
     public void setPassword(String password) { this.password = password; }
 
-/*    public Date getUserDOB() { return userDOB; }
+
+    /*    public Date getUserDOB() { return userDOB; }
 
     public void setUserDOB(Date userDOB) { this.userDOB = userDOB; }
 
