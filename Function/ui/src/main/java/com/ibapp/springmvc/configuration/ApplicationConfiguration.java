@@ -3,6 +3,7 @@ package com.ibapp.springmvc.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.web.servlet.ViewResolver;
@@ -20,6 +21,7 @@ import org.springframework.web.servlet.view.mustache.java.MustacheJTemplateFacto
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackages = "com.ibapp.springmvc")
+@Import({SecurityConfig.class})
 public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 
 

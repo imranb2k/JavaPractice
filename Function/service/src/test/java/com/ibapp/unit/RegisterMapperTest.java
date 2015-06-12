@@ -2,6 +2,7 @@ package com.ibapp.unit;
 
 import com.ibapp.domain.Register;
 import com.ibapp.persistence.RegisterMapper;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,49 +12,48 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * Created by imran on 15/04/15.
  */
-
+@Ignore
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/applicationContext.xml")
 public class RegisterMapperTest {
 
     @Autowired
-    RegisterMapper registerMapper;
+    RegisterMapper RegisterMapper;
 
     @Test
     public void testInsertRegister() throws Exception{
 
-        registerMapper.insertRegister(getRegister());
+        RegisterMapper.insertRegister(getRegister());
 
     }
 
 /*    public void testUpdateRegister() throws Exception{
 
-        registerMapper.updateRegister(getRegister());
+        RegisterMapper.updateRegister(getRegister());
 
     }*/
 
 /*    public void testDeleteRegister() throws Exception{
 
-        registerMapper.deleteRegister(getRegister());
+        RegisterMapper.deleteRegister(getRegister());
 
     }*/
 
 /*    public void testGetRegisterById() throws Exception{
 
-        registerMapper.getRegisterById(1);
+        RegisterMapper.getRegisterById(1);
 
     }*/
 
 /*    public void testGetAllRegisters() throws Exception{
 
-        registerMapper.getAllRegister();
+        RegisterMapper.getAllRegister();
 
     }*/
 
     private Register getRegister() {
 
         Register register = new Register();
-       // register.setId(2);
         register.setUserName("Test Name 3");
         register.setPassword("Test Password 3");
 

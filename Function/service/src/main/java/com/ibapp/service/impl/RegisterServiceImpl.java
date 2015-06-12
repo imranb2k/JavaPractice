@@ -17,38 +17,38 @@ import java.util.List;
 public class RegisterServiceImpl implements RegisterService{
 
     @Autowired
-    private RegisterMapper registerMapper;
+    private RegisterMapper RegisterMapper;
 
 
     @Override
     public void insertRegister(Register register) throws Exception{
 
-        registerMapper.insertRegister(register);
+        RegisterMapper.insertRegister(register);
 
     }
 
     @Override
     public void updateRegister(Register register) throws Exception {
 
-        registerMapper.updateRegister(register);
+        RegisterMapper.updateRegister(register);
 
     }
 
     @Override
     public void deleteRegister(Register register) throws Exception {
 
-        registerMapper.deleteRegister(register);
+        RegisterMapper.deleteRegister(register);
 
     }
 
     @Override
     public Register getRegisterById(int id) throws Exception {
 
-        return registerMapper.getRegisterById(id);
+        return RegisterMapper.getRegisterById(id);
     }
 
     @Override
     public List<Register> getAllRegister() throws Exception {
-        return registerMapper.getAllRegister();
+        return RegisterMapper.getAllRegister();
     }
 }

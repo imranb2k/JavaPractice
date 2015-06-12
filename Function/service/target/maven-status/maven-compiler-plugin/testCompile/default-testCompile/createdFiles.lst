@@ -1,3 +1,5 @@
 com\ibapp\service\rest\TomcatApplicationServer.class
 com\ibapp\unit\RegisterMapperTest.class
 com\ibapp\service\rest\StartApplication.class
+com\ibapp\unit\PersonMapperTest.class
+com\ibapp\service\rest\resource\PersonResourceTest.class

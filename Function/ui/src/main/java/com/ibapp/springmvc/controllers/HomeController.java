@@ -1,8 +1,6 @@
 package com.ibapp.springmvc.controllers;
 
 import com.ibapp.domain.Product;
-import com.ibapp.domain.Products;
-import com.ibapp.domain.ProductsImpl;
 import com.ibapp.domain.Register;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,7 +55,7 @@ public class HomeController {
 
     }
 
-    @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
+    @RequestMapping(value = "registerForm", method = RequestMethod.GET)
     public String getRegister (Model model) {
 
         Product iaProduct = new Product();
@@ -80,8 +78,6 @@ public class HomeController {
         register = responseEntity.getBody();
 
         model.addAttribute("register", register);
-        model.addAttribute("ia", iaProduct);
-        model.addAttribute("section94", section94product);
 
         return "homepage";
 

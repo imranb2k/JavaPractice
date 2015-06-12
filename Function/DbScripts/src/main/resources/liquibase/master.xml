@@ -15,5 +15,9 @@
             <sqlFile path="/src/main/resources/schema/ddl/999999_initial_scripts_rollback.sql"/>
         </rollback>
     </changeSet>
+    <!-- NOTE: Please do not provide script for destroying the DB completely -->
+    <changeSet author="DBA" id="Point 1. Applied version_0.1.">
+        <tagDatabase tag="version_0.1"/>
+    </changeSet>
 
 </databaseChangeLog>

@@ -1,8 +1,6 @@
 package com.ibapp.service.rest.resources;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ibapp.domain.Register;
-import com.ibapp.persistence.RegisterMapper;
 import com.ibapp.service.RegisterService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,16 +20,12 @@ import javax.ws.rs.core.Response;
 @Component
 public class RegisterResource {
 
-
     @Autowired
     public RegisterService registerService;
 
     private static final Logger LOG = LoggerFactory.getLogger(RegisterResource.class);
 
-    private static ObjectMapper MAPPER = new ObjectMapper();
-
     @GET
-    @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllRegisters() {
 
@@ -41,6 +35,20 @@ public class RegisterResource {
             LOG.error("Failed to get list of register : ", e);
         }
         return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Server encountered an error ").build();
+    }
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public  Response createRegister(Register register){
+
+        try {
+            registerService.insertRegister(register);
+            return Response.status(200).build();
+
+        } catch (Exception e) {
+            LOG.error("Failed to insert register : ", e);
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Server encountered an error ").build();
+        }
     }
 
     @GET
@@ -56,22 +64,7 @@ public class RegisterResource {
         return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Server encountered an error ").build();
     }
 
-    @POST
-    @Path("/")
-    @Consumes(MediaType.APPLICATION_JSON)
-    public  Response createRegister(Register register){
 
-        try {
-
-            registerService.insertRegister(register);
-            return Response.status(200).build();
-
-        } catch (Exception e) {
-            LOG.error("Failed to insert register : ", e);
-            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Server encountered an error ").build();
-        }
-
-    }
 
 /*    @POST
     @Path("/")

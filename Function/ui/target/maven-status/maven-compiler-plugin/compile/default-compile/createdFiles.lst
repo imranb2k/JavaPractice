@@ -1,3 +1,4 @@
 com\ibapp\springmvc\configuration\CheckingWebAppInitialiser.class
 com\ibapp\springmvc\controllers\HomeController.class
 com\ibapp\springmvc\configuration\ApplicationConfiguration.class
+com\ibapp\springmvc\configuration\SecurityConfig.class

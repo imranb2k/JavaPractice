@@ -65,6 +65,18 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>4.0.1.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>4.0.1.RELEASE</version>
+        </dependency>
+
         <!-- Mustache dependencies-->
         <dependency>
             <groupId>com.github.sps.mustache</groupId>

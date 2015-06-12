@@ -1,7 +1,6 @@
 package com.ibapp.service;
 
 import com.ibapp.domain.Register;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 

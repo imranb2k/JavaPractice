@@ -2,10 +2,8 @@
 
 {{>_head.mustache }}
 
-<body class="js-enabled">
-<script type="text/javascript">
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-    </script>
+<body>
+
 <header class="header" id="header">
     <div style="display: block;">
         <!--start header-->
@@ -25,27 +23,16 @@
         <!--end header-->
     </div>
 </header>
-<header class="header-claim-data"></header>
+
 <main id="page-container" role="main" aria-live="polite">
     <div class="main-area">
         <div>
-            <div id="notification">
-                <div style="display: block;"></div>
-            </div>
-
-            <nav class="horizontal-navigation">
-                <a class="button in-development" href="#">Exit (don't save)</a>
-            </nav>
-            {{# ia}}
-                {{# state}} {{> products.mustache}} {{/state}}
-            {{/ia}}
+            {{> regsiter2.mustache}}
         </div>
     </div>
 </main>
 
 {{> _footer.mustache }}
-
-{{> _local-scripts.mustache }}
 
 </body>
 </html>

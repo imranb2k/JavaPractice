@@ -14,8 +14,6 @@ public class Register {
     private Integer id;
     private String userName;
     private String password;
-    private Date userDOB;
-    private ArrayList<String> userInterest;
 
     public Integer getId() {
         return id;
@@ -37,16 +35,4 @@ public class Register {
 
     public void setPassword(String password) { this.password = password; }
 
-
-    /*    public Date getUserDOB() { return userDOB; }
-
-    public void setUserDOB(Date userDOB) { this.userDOB = userDOB; }
-
-    public ArrayList<String> getUserInterest() {
-        return userInterest;
-    }
-
-    public void setUserInterest(ArrayList<String> userInterest) {
-        this.userInterest = userInterest;
-    }*/
 }
